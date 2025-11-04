@@ -1,0 +1,44 @@
+{
+  "layers": [
+    {
+      "id": "base_point",
+      "file": "velona's-jungle.geojson",
+      "label": "Velona's Jungle",
+      "category": "base_point",
+      "visible": true,
+      "description": "Main reference point — the starting position for all map distances and routes."
+    },
+    {
+      "id": "boutique",
+      "file": "boutique.geojson",
+      "label": "Boutiques",
+      "category": "boutique",
+      "visible": true,
+      "description": "Selected fashion and concept stores representing the Florentine style."
+    },
+    {
+      "id": "breakfast",
+      "file": "breakfast.geojson",
+      "label": "Breakfast & Cafés",
+      "category": "breakfast",
+      "visible": true,
+      "description": "Cafés and brunch spots where locals start their morning in Florence."
+    },
+    {
+      "id": "restaurant",
+      "file": "restaurant-bar.geojson",
+      "label": "Restaurants & Bars",
+      "category": "restaurant",
+      "visible": true,
+      "description": "A curated selection of restaurants and bars — true local experiences."
+    },
+    {
+      "id": "veggie",
+      "file": "veggie.geojson",
+      "label": "Veggie & Healthy Food",
+      "category": "veggie",
+      "visible": true,
+      "description": "Vegetarian and healthy options that reflect the green side of Florence."
+    }
+  ]
+}

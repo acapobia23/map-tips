@@ -1,0 +1,33 @@
+{
+  "//": "Global map configuration and metadata. Defines base settings, layers, and general information about this dataset.",
+
+  "title": "Velona's Jungle Map",
+  "description": "An interactive guide to the best spots around Velona's Jungle.",
+  "version": "1.0.0",
+  "author": "C4P0 (Alessandro Capobianco)",
+  "license": "CC BY 4.0",
+  "last_update": "2025-11-04",
+
+  "base_point": [43.7769219, 11.2386977],
+  "default_zoom": 15,
+
+  "layers": [
+    "velona's-jungle.geojson",
+    "boutique.geojson",
+    "breakfast.geojson",
+    "restaurant-bar.geojson",
+    "veggie.geojson"
+  ],
+
+  "defaults": {
+    "visible": [
+      "velona's-jungle.geojson"
+    ]
+  },
+
+  "preferences": {
+    "units": "metric",
+    "language": "en",
+    "theme": "light"
+  }
+}

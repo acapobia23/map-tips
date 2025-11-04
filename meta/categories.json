@@ -1,0 +1,43 @@
+{
+  "//": "List of all point categories used across the map. Each key matches a 'category' value inside your GeoJSON files in /data.",
+
+  "base_point": {
+    "label": "Velona's Jungle",
+    "description": "The main base or starting point of the map.",
+    "icon": "assets/icons/base.png",
+    "color": "#0288D1",
+    "priority": 0
+  },
+
+  "boutique": {
+    "label": "Boutique",
+    "description": "Selected fashion and lifestyle shops.",
+    "icon": "assets/icons/boutique.png",
+    "color": "#BA68C8",
+    "priority": 1
+  },
+
+  "breakfast": {
+    "label": "Breakfast",
+    "description": "Cafés and brunch spots.",
+    "icon": "assets/icons/breakfast.png",
+    "color": "#FFB74D",
+    "priority": 2
+  },
+
+  "restaurant": {
+    "label": "Restaurant / Bar",
+    "description": "Places for lunch, dinner, or drinks.",
+    "icon": "assets/icons/restaurant.png",
+    "color": "#E57373",
+    "priority": 3
+  },
+
+  "veggie": {
+    "label": "Veggie",
+    "description": "Vegetarian and vegan-friendly places.",
+    "icon": "assets/icons/veggie.png",
+    "color": "#81C784",
+    "priority": 4
+  }
+}

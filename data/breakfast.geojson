@@ -1,0 +1,125 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2422,
+          43.7758,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Samambaia",
+        "description": {
+          "@type": "html",
+          "value": "Excellent pastry shop with homemade specialties, featuring the traditional Florentine rice pudding, plus vegan and gluten-free croissants. Open daily from 6:30 AM. Continental breakfast served from 9:00 AM. Just around the corner, 2 minutes' walk.: Breakfast, brunch and lunch featuring dishes from around the world. 4 minutes' walk. Mon-Fri 8:00 AM-4:00 PM, Sat 9:00 AM-4:00 PM, Sun 10:00 AM-4:00 PM<br>Via Il Prato 81/r: Via Montebello 86/R<br>unnamed (1): <br>43.77668: 43.77580<br>11.24096: 11.24220"
+        },
+        "Excellent pastry shop with homemade specialties, featuring the traditional Florentine rice pudding, plus vegan and gluten-free croissants. Open daily from 6:30 AM. Continental breakfast served from 9:00 AM. Just around the corner, 2 minutes' walk.": "Breakfast, brunch and lunch featuring dishes from around the world. 4 minutes' walk. Mon-Fri 8:00 AM-4:00 PM, Sat 9:00 AM-4:00 PM, Sun 10:00 AM-4:00 PM",
+        "Via Il Prato 81/r": "Via Montebello 86/R",
+        "unnamed (1)": "",
+        "43.77668": "43.77580",
+        "11.24096": "11.24220",
+        "category": "breakfast"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2468,
+          43.7745,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Caffè Gamberini",
+        "description": {
+          "@type": "html",
+          "value": "Excellent pastry shop with homemade specialties, featuring the traditional Florentine rice pudding, plus vegan and gluten-free croissants. Open daily from 6:30 AM. Continental breakfast served from 9:00 AM. Just around the corner, 2 minutes' walk.: Elegant café with exceptional pastries, perfect for enjoying a leisurely breakfast in a charming atmosphere. Brunch served until 11:30 AM. 6 minutes' walk. Open daily from 7:00 AM<br>Via Il Prato 81/r: Via Curtatone 4<br>unnamed (1): <br>43.77668: 43.77450<br>11.24096: 11.24680"
+        },
+        "Excellent pastry shop with homemade specialties, featuring the traditional Florentine rice pudding, plus vegan and gluten-free croissants. Open daily from 6:30 AM. Continental breakfast served from 9:00 AM. Just around the corner, 2 minutes' walk.": "Elegant café with exceptional pastries, perfect for enjoying a leisurely breakfast in a charming atmosphere. Brunch served until 11:30 AM. 6 minutes' walk. Open daily from 7:00 AM",
+        "Via Il Prato 81/r": "Via Curtatone 4",
+        "unnamed (1)": "",
+        "43.77668": "43.77450",
+        "11.24096": "11.24680",
+        "category": "breakfast"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2505,
+          43.7728,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Caffè Amerini",
+        "description": {
+          "@type": "html",
+          "value": "Excellent pastry shop with homemade specialties, featuring the traditional Florentine rice pudding, plus vegan and gluten-free croissants. Open daily from 6:30 AM. Continental breakfast served from 9:00 AM. Just around the corner, 2 minutes' walk.: Charming, intimate café tucked away on a side street, a favorite among boutique workers on Via della Vigna Nuova. 10 minutes' walk. Open Monday to Saturday from 7:30 AM<br>Via Il Prato 81/r: Via della Vigna Nuova 61<br>unnamed (1): <br>43.77668: 43.77280<br>11.24096: 11.25050"
+        },
+        "Excellent pastry shop with homemade specialties, featuring the traditional Florentine rice pudding, plus vegan and gluten-free croissants. Open daily from 6:30 AM. Continental breakfast served from 9:00 AM. Just around the corner, 2 minutes' walk.": "Charming, intimate café tucked away on a side street, a favorite among boutique workers on Via della Vigna Nuova. 10 minutes' walk. Open Monday to Saturday from 7:30 AM",
+        "Via Il Prato 81/r": "Via della Vigna Nuova 61",
+        "unnamed (1)": "",
+        "43.77668": "43.77280",
+        "11.24096": "11.25050",
+        "category": "breakfast"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2495,
+          43.7748,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Cortese Caffè",
+        "description": {
+          "@type": "html",
+          "value": "Excellent pastry shop with homemade specialties, featuring the traditional Florentine rice pudding, plus vegan and gluten-free croissants. Open daily from 6:30 AM. Continental breakfast served from 9:00 AM. Just around the corner, 2 minutes' walk.: Outstanding raw and vegan pastry shop in one of Florence's most beautiful squares. 10 minutes' walk. Monday to Friday from 8:30 AM, Saturday and Sunday from 9:30 AM<br>Via Il Prato 81/r: Piazza Santa Maria Novella 12R<br>unnamed (1): <br>43.77668: 43.77480<br>11.24096: 11.24950"
+        },
+        "Excellent pastry shop with homemade specialties, featuring the traditional Florentine rice pudding, plus vegan and gluten-free croissants. Open daily from 6:30 AM. Continental breakfast served from 9:00 AM. Just around the corner, 2 minutes' walk.": "Outstanding raw and vegan pastry shop in one of Florence's most beautiful squares. 10 minutes' walk. Monday to Friday from 8:30 AM, Saturday and Sunday from 9:30 AM",
+        "Via Il Prato 81/r": "Piazza Santa Maria Novella 12R",
+        "unnamed (1)": "",
+        "43.77668": "43.77480",
+        "11.24096": "11.24950",
+        "category": "breakfast"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2485,
+          43.7675,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Babae",
+        "description": {
+          "@type": "html",
+          "value": "Excellent pastry shop with homemade specialties, featuring the traditional Florentine rice pudding, plus vegan and gluten-free croissants. Open daily from 6:30 AM. Continental breakfast served from 9:00 AM. Just around the corner, 2 minutes' walk.: Lovely café and restaurant with irresistible cakes, perfect for an afternoon break. 15 minutes' walk. Open Tuesday to Sunday from 10:00 AM<br>Via Il Prato 81/r: Via di Santo Spirito 21R<br>unnamed (1): <br>43.77668: 43.76750<br>11.24096: 11.24850"
+        },
+        "Excellent pastry shop with homemade specialties, featuring the traditional Florentine rice pudding, plus vegan and gluten-free croissants. Open daily from 6:30 AM. Continental breakfast served from 9:00 AM. Just around the corner, 2 minutes' walk.": "Lovely café and restaurant with irresistible cakes, perfect for an afternoon break. 15 minutes' walk. Open Tuesday to Sunday from 10:00 AM",
+        "Via Il Prato 81/r": "Via di Santo Spirito 21R",
+        "unnamed (1)": "",
+        "43.77668": "43.76750",
+        "11.24096": "11.24850",
+        "category": "breakfast"
+      }
+    }
+  ]
+}

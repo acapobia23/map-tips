@@ -1,0 +1,533 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2412,
+          43.7762,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Casa Ciabattini",
+        "description": {
+          "@type": "html",
+          "value": "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.: High-quality trattoria with many house-made specialties (pasta, bread and desserts), excellent wine selection and pleasant décor. One of our favorite spots! 2 minutes' walk, just around the corner. Lunch and dinner Monday to Saturday, closed Sunday.<br>Via Il Prato 96/R: Via Il Prato 68/R<br>+39 055 287663: +39 055 025 0035<br>43.77700: 43.77620<br>11.24050: 11.24120"
+        },
+        "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.": "High-quality trattoria with many house-made specialties (pasta, bread and desserts), excellent wine selection and pleasant décor. One of our favorite spots! 2 minutes' walk, just around the corner. Lunch and dinner Monday to Saturday, closed Sunday.",
+        "Via Il Prato 96/R": "Via Il Prato 68/R",
+        "+39 055 287663": "+39 055 025 0035",
+        "43.77700": "43.77620",
+        "11.24050": "11.24120",
+        "category": "restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2415,
+          43.7758,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Olio Restaurant",
+        "description": {
+          "@type": "html",
+          "value": "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.: Elegant restaurant featuring Tuscan cuisine. 3 minutes' walk, just around the corner. Dinner only, closed Monday.<br>Via Il Prato 96/R: Via Il Prato 58/R<br>+39 055 287663: +39 055 2658198<br>43.77700: 43.77580<br>11.24050: 11.24150"
+        },
+        "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.": "Elegant restaurant featuring Tuscan cuisine. 3 minutes' walk, just around the corner. Dinner only, closed Monday.",
+        "Via Il Prato 96/R": "Via Il Prato 58/R",
+        "+39 055 287663": "+39 055 2658198",
+        "43.77700": "43.77580",
+        "11.24050": "11.24150",
+        "category": "restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2502,
+          43.7712,
+          0
+        ]
+      },
+      "properties": {
+        "name": "L'Osteria Di Giovanni",
+        "description": {
+          "@type": "html",
+          "value": "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.: Excellent traditional Tuscan restaurant. Highly recommended for those wanting to try the famous bistecca alla fiorentina! 10 minutes' walk. Dinner Monday to Saturday, closed Sunday.<br>Via Il Prato 96/R: Via del Moro 22<br>+39 055 287663: +39 055 219208<br>43.77700: 43.77120<br>11.24050: 11.25020"
+        },
+        "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.": "Excellent traditional Tuscan restaurant. Highly recommended for those wanting to try the famous bistecca alla fiorentina! 10 minutes' walk. Dinner Monday to Saturday, closed Sunday.",
+        "Via Il Prato 96/R": "Via del Moro 22",
+        "+39 055 287663": "+39 055 219208",
+        "43.77700": "43.77120",
+        "11.24050": "11.25020",
+        "category": "restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2488,
+          43.7725,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Trattoria 13 Gobbi",
+        "description": {
+          "@type": "html",
+          "value": "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.: Traditional trattoria, though a bit chaotic. Crowded on weekends. 10 minutes' walk. Lunch and dinner daily.<br>Via Il Prato 96/R: Via del Porcellana 9R<br>+39 055 287663: +39 055 284015<br>43.77700: 43.77250<br>11.24050: 11.24880"
+        },
+        "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.": "Traditional trattoria, though a bit chaotic. Crowded on weekends. 10 minutes' walk. Lunch and dinner daily.",
+        "Via Il Prato 96/R": "Via del Porcellana 9R",
+        "+39 055 287663": "+39 055 284015",
+        "43.77700": "43.77250",
+        "11.24050": "11.24880",
+        "category": "restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2452,
+          43.7685,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Il Guscio",
+        "description": {
+          "@type": "html",
+          "value": "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.: Excellent Tuscan cuisine in the heart of the San Frediano neighborhood. Highly recommended! 10 minutes' walk. Lunch and dinner daily, Saturday dinner only, closed Sunday.<br>Via Il Prato 96/R: Via dell'Orto 49a<br>+39 055 287663: +39 055 224421<br>43.77700: 43.76850<br>11.24050: 11.24520"
+        },
+        "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.": "Excellent Tuscan cuisine in the heart of the San Frediano neighborhood. Highly recommended! 10 minutes' walk. Lunch and dinner daily, Saturday dinner only, closed Sunday.",
+        "Via Il Prato 96/R": "Via dell'Orto 49a",
+        "+39 055 287663": "+39 055 224421",
+        "43.77700": "43.76850",
+        "11.24050": "11.24520",
+        "category": "restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2478,
+          43.7688,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Berberé San Frediano",
+        "description": {
+          "@type": "html",
+          "value": "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.: The best pizza in town! 10 minutes' walk. Open daily 6:00 PM-10:00 PM.<br>Via Il Prato 96/R: Piazza dei Nerli 1<br>+39 055 287663: +39 055 238 2946<br>43.77700: 43.76880<br>11.24050: 11.24780"
+        },
+        "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.": "The best pizza in town! 10 minutes' walk. Open daily 6:00 PM-10:00 PM.",
+        "Via Il Prato 96/R": "Piazza dei Nerli 1",
+        "+39 055 287663": "+39 055 238 2946",
+        "43.77700": "43.76880",
+        "11.24050": "11.24780",
+        "category": "restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2575,
+          43.7758,
+          0
+        ]
+      },
+      "properties": {
+        "name": "La Ménagère",
+        "description": {
+          "@type": "html",
+          "value": "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.: Concept restaurant and bar in a stunning location. Better for drinks than lunch or dinner. 15 minutes' walk. Open daily all day.<br>Via Il Prato 96/R: Via Ginori 8<br>+39 055 287663: +39 055 075 0600<br>43.77700: 43.77580<br>11.24050: 11.25750"
+        },
+        "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.": "Concept restaurant and bar in a stunning location. Better for drinks than lunch or dinner. 15 minutes' walk. Open daily all day.",
+        "Via Il Prato 96/R": "Via Ginori 8",
+        "+39 055 287663": "+39 055 075 0600",
+        "43.77700": "43.77580",
+        "11.24050": "11.25750",
+        "category": "restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2562,
+          43.7658,
+          0
+        ]
+      },
+      "properties": {
+        "name": "La Leggenda dei Frati",
+        "description": {
+          "@type": "html",
+          "value": "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.: Fine dining restaurant located inside Villa Bardini. The culinary experience and city views are worth the price. The chef can prepare vegetarian/vegan menus with advance reservation.<br>Via Il Prato 96/R: Costa San Giorgio 6/A<br>+39 055 287663: +39 055 068 0545<br>43.77700: 43.76580<br>11.24050: 11.25620"
+        },
+        "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.": "Fine dining restaurant located inside Villa Bardini. The culinary experience and city views are worth the price. The chef can prepare vegetarian/vegan menus with advance reservation.",
+        "Via Il Prato 96/R": "Costa San Giorgio 6/A",
+        "+39 055 287663": "+39 055 068 0545",
+        "43.77700": "43.76580",
+        "11.24050": "11.25620",
+        "category": "restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2458,
+          43.7682,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Burro e Acciughe",
+        "description": {
+          "@type": "html",
+          "value": "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.: Seafood restaurant. Lunch and dinner daily, closed Monday.<br>Via Il Prato 96/R: Via dell'Orto 35<br>+39 055 287663: +39 055 045 7286<br>43.77700: 43.76820<br>11.24050: 11.24580"
+        },
+        "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.": "Seafood restaurant. Lunch and dinner daily, closed Monday.",
+        "Via Il Prato 96/R": "Via dell'Orto 35",
+        "+39 055 287663": "+39 055 045 7286",
+        "43.77700": "43.76820",
+        "11.24050": "11.24580",
+        "category": "restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2532,
+          43.7678,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Caffè dell'Oro",
+        "description": {
+          "@type": "html",
+          "value": "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.: Located on the Arno, next to Ponte Vecchio. Very romantic. Lunch and dinner daily.<br>Via Il Prato 96/R: Lungarno degli Acciaiuoli 4<br>+39 055 287663: +39 055 2726 8912<br>43.77700: 43.76780<br>11.24050: 11.25320"
+        },
+        "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.": "Located on the Arno, next to Ponte Vecchio. Very romantic. Lunch and dinner daily.",
+        "Via Il Prato 96/R": "Lungarno degli Acciaiuoli 4",
+        "+39 055 287663": "+39 055 2726 8912",
+        "43.77700": "43.76780",
+        "11.24050": "11.25320",
+        "category": "restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2498,
+          43.7715,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Art Bar",
+        "description": {
+          "@type": "html",
+          "value": "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.: Historic establishment, popular for excellent cocktails. Since 1984. Open from 7:00 PM.<br>Via Il Prato 96/R: Via del Moro 4<br>+39 055 287663: +39 055 210697<br>43.77700: 43.77150<br>11.24050: 11.24980"
+        },
+        "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.": "Historic establishment, popular for excellent cocktails. Since 1984. Open from 7:00 PM.",
+        "Via Il Prato 96/R": "Via del Moro 4",
+        "+39 055 287663": "+39 055 210697",
+        "43.77700": "43.77150",
+        "11.24050": "11.24980",
+        "category": "restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2492,
+          43.7682,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Spirituum",
+        "description": {
+          "@type": "html",
+          "value": "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.: Beautiful cocktail bar with excellent drinks in the Oltrarno district. Monday to Sunday 6:00 PM-2:00 AM.<br>Via Il Prato 96/R: Via Sant'Agostino 14<br>+39 055 287663: +39 055 265 4334<br>43.77700: 43.76820<br>11.24050: 11.24920"
+        },
+        "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.": "Beautiful cocktail bar with excellent drinks in the Oltrarno district. Monday to Sunday 6:00 PM-2:00 AM.",
+        "Via Il Prato 96/R": "Via Sant'Agostino 14",
+        "+39 055 287663": "+39 055 265 4334",
+        "43.77700": "43.76820",
+        "11.24050": "11.24920",
+        "category": "restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2385,
+          43.7658,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Lo SchiacciaVino",
+        "description": {
+          "@type": "html",
+          "value": "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.: Our favorite schiacciata (flatbread). Two locations.<br>Via Il Prato 96/R: Via Pisana 10r / Via Giuseppe Verdi 6r<br>+39 055 287663: <br>43.77700: 43.76580<br>11.24050: 11.23850"
+        },
+        "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.": "Our favorite schiacciata (flatbread). Two locations.",
+        "Via Il Prato 96/R": "Via Pisana 10r / Via Giuseppe Verdi 6r",
+        "+39 055 287663": "",
+        "43.77700": "43.76580",
+        "11.24050": "11.23850",
+        "category": "restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2568,
+          43.7718,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Ristorante Quinoa",
+        "description": {
+          "@type": "html",
+          "value": "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.: Gluten-free restaurant in a lovely location. 15 minutes' walk. Lunch and dinner daily.<br>Via Il Prato 96/R: Vicolo di S.Maria Maggiore 1<br>+39 055 287663: +39 055 290876<br>43.77700: 43.77180<br>11.24050: 11.25680"
+        },
+        "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.": "Gluten-free restaurant in a lovely location. 15 minutes' walk. Lunch and dinner daily.",
+        "Via Il Prato 96/R": "Vicolo di S.Maria Maggiore 1",
+        "+39 055 287663": "+39 055 290876",
+        "43.77700": "43.77180",
+        "11.24050": "11.25680",
+        "category": "restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2518,
+          43.7672,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Enoteca Le Volpi e L'Uva",
+        "description": {
+          "@type": "html",
+          "value": "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.: Excellent for lunch, snacks or aperitivo. Open daily from lunch through aperitivo until 9:00 PM, closed Sunday.<br>Via Il Prato 96/R: Piazza dei Rossi 1R<br>+39 055 287663: +39 055 239 8132<br>43.77700: 43.76720<br>11.24050: 11.25180"
+        },
+        "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.": "Excellent for lunch, snacks or aperitivo. Open daily from lunch through aperitivo until 9:00 PM, closed Sunday.",
+        "Via Il Prato 96/R": "Piazza dei Rossi 1R",
+        "+39 055 287663": "+39 055 239 8132",
+        "43.77700": "43.76720",
+        "11.24050": "11.25180",
+        "category": "restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2575,
+          43.7722,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Konnubio",
+        "description": {
+          "@type": "html",
+          "value": "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.: Excellent contemporary restaurant with refined setting near the Duomo. Open for dinner daily.<br>Via Il Prato 96/R: Via dei Conti 8r<br>+39 055 287663: +39 055 238 2691<br>43.77700: 43.77220<br>11.24050: 11.25750"
+        },
+        "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.": "Excellent contemporary restaurant with refined setting near the Duomo. Open for dinner daily.",
+        "Via Il Prato 96/R": "Via dei Conti 8r",
+        "+39 055 287663": "+39 055 238 2691",
+        "43.77700": "43.77220",
+        "11.24050": "11.25750",
+        "category": "restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2368,
+          43.7755,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Bistrot Santa Rosa",
+        "description": {
+          "@type": "html",
+          "value": "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.: Charming urban garden at the edge of the historic center walls, beside the Arno. Relaxing atmosphere. Good food and excellent drinks. Monday to Friday 8:00 AM-10:00 PM, Saturday and Sunday 10:00 AM-10:00 PM.<br>Via Il Prato 96/R: Lungarno di Santa Rosa<br>+39 055 287663: +39 055 230 9057<br>43.77700: 43.77550<br>11.24050: 11.23680"
+        },
+        "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.": "Charming urban garden at the edge of the historic center walls, beside the Arno. Relaxing atmosphere. Good food and excellent drinks. Monday to Friday 8:00 AM-10:00 PM, Saturday and Sunday 10:00 AM-10:00 PM.",
+        "Via Il Prato 96/R": "Lungarno di Santa Rosa",
+        "+39 055 287663": "+39 055 230 9057",
+        "43.77700": "43.77550",
+        "11.24050": "11.23680",
+        "category": "restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2658,
+          43.7642,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Antica Mescita San Niccolò",
+        "description": {
+          "@type": "html",
+          "value": "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.: Traditional osteria in the picturesque San Niccolò neighborhood. Lunch and dinner daily.<br>Via Il Prato 96/R: Via di S. Niccolò 60r<br>+39 055 287663: +39 055 234 2836<br>43.77700: 43.76420<br>11.24050: 11.26580"
+        },
+        "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.": "Traditional osteria in the picturesque San Niccolò neighborhood. Lunch and dinner daily.",
+        "Via Il Prato 96/R": "Via di S. Niccolò 60r",
+        "+39 055 287663": "+39 055 234 2836",
+        "43.77700": "43.76420",
+        "11.24050": "11.26580",
+        "category": "restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2682,
+          43.7715,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Cibreo Caffè / Ristorante",
+        "description": {
+          "@type": "html",
+          "value": "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.: Excellent restaurant with exclusive setting in the Sant'Ambrogio neighborhood, a must-visit. Open daily 9:00 AM-10:00 PM.<br>Via Il Prato 96/R: Via del Verrocchio 8r<br>+39 055 287663: +39 055 234 11 00<br>43.77700: 43.77150<br>11.24050: 11.26820"
+        },
+        "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.": "Excellent restaurant with exclusive setting in the Sant'Ambrogio neighborhood, a must-visit. Open daily 9:00 AM-10:00 PM.",
+        "Via Il Prato 96/R": "Via del Verrocchio 8r",
+        "+39 055 287663": "+39 055 234 11 00",
+        "43.77700": "43.77150",
+        "11.24050": "11.26820",
+        "category": "restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2472,
+          43.7678,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Il Santo Bevitore",
+        "description": {
+          "@type": "html",
+          "value": "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.: Excellent contemporary Tuscan cuisine. Open for lunch and dinner daily. Easier to book online.<br>Via Il Prato 96/R: Via di Santo Spirito 64/R<br>+39 055 287663: +39 055 211264<br>43.77700: 43.76780<br>11.24050: 11.24720"
+        },
+        "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.": "Excellent contemporary Tuscan cuisine. Open for lunch and dinner daily. Easier to book online.",
+        "Via Il Prato 96/R": "Via di Santo Spirito 64/R",
+        "+39 055 287663": "+39 055 211264",
+        "43.77700": "43.76780",
+        "11.24050": "11.24720",
+        "category": "restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2538,
+          43.7682,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Osteria delle 3 Panche",
+        "description": {
+          "@type": "html",
+          "value": "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.: Splendid terrace overlooking the Arno inside Hotel Hermitage, classic Tuscan dishes with a refined touch, especially recommended for truffle! Open daily noon to midnight.<br>Via Il Prato 96/R: Vicolo Marzio 1<br>+39 055 287663: +39 348 4562480<br>43.77700: 43.76820<br>11.24050: 11.25380"
+        },
+        "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.": "Splendid terrace overlooking the Arno inside Hotel Hermitage, classic Tuscan dishes with a refined touch, especially recommended for truffle! Open daily noon to midnight.",
+        "Via Il Prato 96/R": "Vicolo Marzio 1",
+        "+39 055 287663": "+39 348 4562480",
+        "43.77700": "43.76820",
+        "11.24050": "11.25380",
+        "category": "restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2652,
+          43.7758,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Nugolo",
+        "description": {
+          "@type": "html",
+          "value": "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.: Beautiful establishment with cuisine based on seasonal ingredients. Mon-Sat 7:30 PM-midnight / Sat noon-1:30 PM / Closed Sunday.<br>Via Il Prato 96/R: Via della Mattonaia 27R<br>+39 055 287663: +39 055 263 8884<br>43.77700: 43.77580<br>11.24050: 11.26520"
+        },
+        "Historic, traditional establishment serving excellent home-style cooking. 2 minutes' walk, just around the corner. Lunch and dinner Monday to Friday, closed Saturday, Sunday lunch only.": "Beautiful establishment with cuisine based on seasonal ingredients. Mon-Sat 7:30 PM-midnight / Sat noon-1:30 PM / Closed Sunday.",
+        "Via Il Prato 96/R": "Via della Mattonaia 27R",
+        "+39 055 287663": "+39 055 263 8884",
+        "43.77700": "43.77580",
+        "11.24050": "11.26520",
+        "category": "restaurant"
+      }
+    }
+  ]
+}

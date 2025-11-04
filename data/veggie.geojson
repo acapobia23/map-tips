@@ -1,0 +1,173 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2522,
+          43.7692,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Libreria Brac",
+        "description": {
+          "@type": "html",
+          "value": "Excellent osteria with a relaxed atmosphere, specializing in vegetarian and vegan dishes. Tuesday to Sunday lunch and dinner, closed Monday.: Vegetarian and vegan cuisine inside a bookstore—a wonderful combination. Monday to Saturday lunch and dinner. Sunday lunch only.<br>Piazza della Passera 1: Via dei Vagellai 18<br>+39 055 2741583: +39 055 094 4877<br>43.76680: 43.76920<br>11.25050: 11.25220"
+        },
+        "Excellent osteria with a relaxed atmosphere, specializing in vegetarian and vegan dishes. Tuesday to Sunday lunch and dinner, closed Monday.": "Vegetarian and vegan cuisine inside a bookstore—a wonderful combination. Monday to Saturday lunch and dinner. Sunday lunch only.",
+        "Piazza della Passera 1": "Via dei Vagellai 18",
+        "+39 055 2741583": "+39 055 094 4877",
+        "43.76680": "43.76920",
+        "11.25050": "11.25220",
+        "category": "veggie"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2548,
+          43.7712,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Floret Bar and Restaurant",
+        "description": {
+          "@type": "html",
+          "value": "Excellent osteria with a relaxed atmosphere, specializing in vegetarian and vegan dishes. Tuesday to Sunday lunch and dinner, closed Monday.: Excellent drinks and organic dishes in a unique setting, with many vegan options. Monday to Sunday 10:30 AM-7:30 PM. Two locations.<br>Piazza della Passera 1: Via Roma 21 (inside shop Luisa) / Via San Niccolò 81<br>+39 055 2741583: +39 055 295924 / +39 055 0132531<br>43.76680: 43.77120<br>11.25050: 11.25480"
+        },
+        "Excellent osteria with a relaxed atmosphere, specializing in vegetarian and vegan dishes. Tuesday to Sunday lunch and dinner, closed Monday.": "Excellent drinks and organic dishes in a unique setting, with many vegan options. Monday to Sunday 10:30 AM-7:30 PM. Two locations.",
+        "Piazza della Passera 1": "Via Roma 21 (inside shop Luisa) / Via San Niccolò 81",
+        "+39 055 2741583": "+39 055 295924 / +39 055 0132531",
+        "43.76680": "43.77120",
+        "11.25050": "11.25480",
+        "category": "veggie"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2512,
+          43.7658,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Carduccio - Il Salotto Bio",
+        "description": {
+          "@type": "html",
+          "value": "Excellent osteria with a relaxed atmosphere, specializing in vegetarian and vegan dishes. Tuesday to Sunday lunch and dinner, closed Monday.: Organic bar and restaurant. Monday to Saturday 8:00 AM-6:00 PM, Sunday 10:00 AM-6:00 PM.<br>Piazza della Passera 1: Sdrucciolo dei Pitti 10R<br>+39 055 2741583: +39 055 2382070 / +39 320 7009330<br>43.76680: 43.76580<br>11.25050: 11.25120"
+        },
+        "Excellent osteria with a relaxed atmosphere, specializing in vegetarian and vegan dishes. Tuesday to Sunday lunch and dinner, closed Monday.": "Organic bar and restaurant. Monday to Saturday 8:00 AM-6:00 PM, Sunday 10:00 AM-6:00 PM.",
+        "Piazza della Passera 1": "Sdrucciolo dei Pitti 10R",
+        "+39 055 2741583": "+39 055 2382070 / +39 320 7009330",
+        "43.76680": "43.76580",
+        "11.25050": "11.25120",
+        "category": "veggie"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2489,
+          43.7685,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Raw",
+        "description": {
+          "@type": "html",
+          "value": "Excellent osteria with a relaxed atmosphere, specializing in vegetarian and vegan dishes. Tuesday to Sunday lunch and dinner, closed Monday.: Excellent for breakfast. Tuesday to Sunday 10:00 AM-10:00 PM.<br>Piazza della Passera 1: Via Sant'Agostino 11R<br>+39 055 2741583: +39 055 709 1328<br>43.76680: 43.76850<br>11.25050: 11.24890"
+        },
+        "Excellent osteria with a relaxed atmosphere, specializing in vegetarian and vegan dishes. Tuesday to Sunday lunch and dinner, closed Monday.": "Excellent for breakfast. Tuesday to Sunday 10:00 AM-10:00 PM.",
+        "Piazza della Passera 1": "Via Sant'Agostino 11R",
+        "+39 055 2741583": "+39 055 709 1328",
+        "43.76680": "43.76850",
+        "11.25050": "11.24890",
+        "category": "veggie"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2548,
+          43.7782,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Il Vegetariano",
+        "description": {
+          "@type": "html",
+          "value": "Excellent osteria with a relaxed atmosphere, specializing in vegetarian and vegan dishes. Tuesday to Sunday lunch and dinner, closed Monday.: Very casual atmosphere, Florence's first vegetarian restaurant. Monday to Friday lunch and dinner, Saturday and Sunday dinner only.<br>Piazza della Passera 1: Via delle Ruote 30R<br>+39 055 2741583: +39 055 475030<br>43.76680: 43.77820<br>11.25050: 11.25480"
+        },
+        "Excellent osteria with a relaxed atmosphere, specializing in vegetarian and vegan dishes. Tuesday to Sunday lunch and dinner, closed Monday.": "Very casual atmosphere, Florence's first vegetarian restaurant. Monday to Friday lunch and dinner, Saturday and Sunday dinner only.",
+        "Piazza della Passera 1": "Via delle Ruote 30R",
+        "+39 055 2741583": "+39 055 475030",
+        "43.76680": "43.77820",
+        "11.25050": "11.25480",
+        "category": "veggie"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2572,
+          43.7812,
+          0
+        ]
+      },
+      "properties": {
+        "name": "ORA - Ristorante Vegetariano",
+        "description": {
+          "@type": "html",
+          "value": "Excellent osteria with a relaxed atmosphere, specializing in vegetarian and vegan dishes. Tuesday to Sunday lunch and dinner, closed Monday.: Monday to Friday lunch and dinner, Saturday dinner only, closed Sunday.<br>Piazza della Passera 1: Via San Zanobi 126R<br>+39 055 2741583: +39 055 4633414<br>43.76680: 43.78120<br>11.25050: 11.25720"
+        },
+        "Excellent osteria with a relaxed atmosphere, specializing in vegetarian and vegan dishes. Tuesday to Sunday lunch and dinner, closed Monday.": "Monday to Friday lunch and dinner, Saturday dinner only, closed Sunday.",
+        "Piazza della Passera 1": "Via San Zanobi 126R",
+        "+39 055 2741583": "+39 055 4633414",
+        "43.76680": "43.78120",
+        "11.25050": "11.25720",
+        "category": "veggie"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2545,
+          43.7768,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Veg & Veg",
+        "description": {
+          "@type": "html",
+          "value": "Excellent osteria with a relaxed atmosphere, specializing in vegetarian and vegan dishes. Tuesday to Sunday lunch and dinner, closed Monday.: Located on the first floor of Mercato Centrale. Open daily 8:00 AM-midnight.<br>Piazza della Passera 1: Piazza del Mercato Centrale 4<br>+39 055 2741583: <br>43.76680: 43.77680<br>11.25050: 11.25450"
+        },
+        "Excellent osteria with a relaxed atmosphere, specializing in vegetarian and vegan dishes. Tuesday to Sunday lunch and dinner, closed Monday.": "Located on the first floor of Mercato Centrale. Open daily 8:00 AM-midnight.",
+        "Piazza della Passera 1": "Piazza del Mercato Centrale 4",
+        "+39 055 2741583": "",
+        "43.76680": "43.77680",
+        "11.25050": "11.25450",
+        "category": "veggie"
+      }
+    }
+  ]
+}

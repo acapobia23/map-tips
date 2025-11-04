@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2386977,
+          43.7769219,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Velona's Jungle",
+        "description": {
+          "@type": "html",
+          "value": "Your starting point!<br> Via Montebello 86, 50123 Firenze<br> Tel: +39 055 2741536"
+        },
+        "category": "base_point"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2386977,
+          43.7769219,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Velona's Jungle",
+        "description": {
+          "@type": "html",
+          "value": "Your starting point!<br> Via Montebello 86, 50123 Firenze<br> Tel: +39 055 2741536"
+        },
+        "category": "base_point"
+      }
+    }
+  ]
+}
