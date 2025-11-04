@@ -25,10 +25,10 @@
       "description": "Cafés and brunch spots where locals start their morning in Florence."
     },
     {
-      "id": "restaurant",
+      "id": "restaurant-bar",
       "file": "restaurant-bar.geojson",
       "label": "Restaurants & Bars",
-      "category": "restaurant",
+      "category": "restaurant-bar",
       "visible": true,
       "description": "A curated selection of restaurants and bars — true local experiences."
     },

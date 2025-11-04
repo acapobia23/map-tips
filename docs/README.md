@@ -30,3 +30,5 @@ If you replace or add icons in the future:
 © 2025 — Velona’s Jungle Map Repository  
 Created by 42 Firenze Project Team
 
+old map
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1mNVauGKmK0CwocD9PAX_kAc6rStt8QU&ehbc=2E312F&noprof=1" width="340" height="480"></iframe>
