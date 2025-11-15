@@ -5,23 +5,14 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          11.2562,
-          43.7788,
-          0
-        ]
+        "coordinates": [11.2562, 43.7788, 0]
       },
       "properties": {
         "name": "Donata Patrussi",
         "description": {
           "@type": "html",
-          "value": "Antiques shop, our grandfather's store, now run by our uncle Furio.: Antiques, run by Donata, a true art enthusiast.<br>Via dei Fossi 31: Via Palmieri 28r<br>unnamed (1): <br>43.77280: 43.77880<br>11.25180: 11.25620"
+          "value": "Antiques, run by Donata — a true art enthusiast. A charming store with character and curated treasures."
         },
-        "Antiques shop, our grandfather's store, now run by our uncle Furio.": "Antiques, run by Donata, a true art enthusiast.",
-        "Via dei Fossi 31": "Via Palmieri 28r",
-        "unnamed (1)": "",
-        "43.77280": "43.77880",
-        "11.25180": "11.25620",
         "category": "boutique"
       }
     },
@@ -29,23 +20,14 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          11.2518,
-          43.7665,
-          0
-        ]
+        "coordinates": [11.2518, 43.7665, 0]
       },
       "properties": {
         "name": "Gem",
         "description": {
           "@type": "html",
-          "value": "Antiques shop, our grandfather's store, now run by our uncle Furio.: Jewelry shop next to Ponte Vecchio, run by Sandra, with excellent prices.<br>Via dei Fossi 31: Borgo San Iacopo 87r<br>unnamed (1): <br>43.77280: 43.76650<br>11.25180: 11.25180"
+          "value": "Jewelry shop next to Ponte Vecchio, run by Sandra — great prices and beautiful pieces."
         },
-        "Antiques shop, our grandfather's store, now run by our uncle Furio.": "Jewelry shop next to Ponte Vecchio, run by Sandra, with excellent prices.",
-        "Via dei Fossi 31": "Borgo San Iacopo 87r",
-        "unnamed (1)": "",
-        "43.77280": "43.76650",
-        "11.25180": "11.25180",
         "category": "boutique"
       }
     },
@@ -53,23 +35,14 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          11.2542,
-          43.7712,
-          0
-        ]
+        "coordinates": [11.2542, 43.7712, 0]
       },
       "properties": {
         "name": "Montgomery",
         "description": {
           "@type": "html",
-          "value": "Antiques shop, our grandfather's store, now run by our uncle Furio.: Clothing boutique run by Matteo and his father, featuring an excellent selection.<br>Via dei Fossi 31: Via Pellicceria 22r<br>unnamed (1): <br>43.77280: 43.77120<br>11.25180: 11.25420"
+          "value": "Clothing boutique run by Matteo and his father — unique selection with strong Florentine identity."
         },
-        "Antiques shop, our grandfather's store, now run by our uncle Furio.": "Clothing boutique run by Matteo and his father, featuring an excellent selection.",
-        "Via dei Fossi 31": "Via Pellicceria 22r",
-        "unnamed (1)": "",
-        "43.77280": "43.77120",
-        "11.25180": "11.25420",
         "category": "boutique"
       }
     },
@@ -77,23 +50,14 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          11.2528,
-          43.7682,
-          0
-        ]
+        "coordinates": [11.2528, 43.7682, 0]
       },
       "properties": {
         "name": "Boutique Nadine",
         "description": {
           "@type": "html",
-          "value": "Antiques shop, our grandfather's store, now run by our uncle Furio.: Beautiful selection of clothing and accessories. Notable vintage section.<br>Via dei Fossi 31: Lungarno degli Acciaiuoli 22/r<br>unnamed (1): <br>43.77280: 43.76820<br>11.25180: 11.25280"
+          "value": "Curated clothing and accessories with a great vintage selection — beautifully arranged, stylish and unique."
         },
-        "Antiques shop, our grandfather's store, now run by our uncle Furio.": "Beautiful selection of clothing and accessories. Notable vintage section.",
-        "Via dei Fossi 31": "Lungarno degli Acciaiuoli 22/r",
-        "unnamed (1)": "",
-        "43.77280": "43.76820",
-        "11.25180": "11.25280",
         "category": "boutique"
       }
     },
@@ -101,23 +65,14 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          11.2602,
-          43.7692,
-          0
-        ]
+        "coordinates": [11.2602, 43.7692, 0]
       },
       "properties": {
         "name": "Studioteca",
         "description": {
           "@type": "html",
-          "value": "Antiques shop, our grandfather's store, now run by our uncle Furio.: Carefully selected Italian and Florentine brands in this beautiful shop.<br>Via dei Fossi 31: Via dei Benci 32r<br>unnamed (1): <br>43.77280: 43.76920<br>11.25180: 11.26020"
+          "value": "A beautifully curated store featuring Italian and Florentine craftsmanship — modern and refined."
         },
-        "Antiques shop, our grandfather's store, now run by our uncle Furio.": "Carefully selected Italian and Florentine brands in this beautiful shop.",
-        "Via dei Fossi 31": "Via dei Benci 32r",
-        "unnamed (1)": "",
-        "43.77280": "43.76920",
-        "11.25180": "11.26020",
         "category": "boutique"
       }
     },
@@ -125,23 +80,14 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          11.2512,
-          43.7732,
-          0
-        ]
+        "coordinates": [11.2512, 43.7732, 0]
       },
       "properties": {
         "name": "Studioteca Emporio",
         "description": {
           "@type": "html",
-          "value": "Antiques shop, our grandfather's store, now run by our uncle Furio.: Home accessories and much more, curated by owner Matteo. The shop is located on the antique dealers' street.<br>Via dei Fossi 31: Via dei Fossi 42r<br>unnamed (1): <br>43.77280: 43.77320<br>11.25180: 11.25120"
+          "value": "Home accessories and decor curated by Matteo — cozy, stylish and full of character."
         },
-        "Antiques shop, our grandfather's store, now run by our uncle Furio.": "Home accessories and much more, curated by owner Matteo. The shop is located on the antique dealers' street.",
-        "Via dei Fossi 31": "Via dei Fossi 42r",
-        "unnamed (1)": "",
-        "43.77280": "43.77320",
-        "11.25180": "11.25120",
         "category": "boutique"
       }
     }
