@@ -118,6 +118,17 @@ async function initMap() {
           return { color: '#3bd2c9', weight: 2, fillOpacity: 0.1 };
         }
       }).addTo(map);
+
+      // === GESTIONE POLIGONO UNESCO ===
+      // Cerca la feature del poligono UNESCO
+      const unescoFeature = geojson.features.find(f => f.geometry && f.geometry.type === 'Polygon' && f.properties && f.properties.name && f.properties.name.toLowerCase().includes('unesco'));
+      if (unescoFeature) {
+        const unescoLayer = L.geoJSON(unescoFeature, {
+          style: { color: '#e67e22', weight: 3, fillOpacity: 0.18, dashArray: '6 4' }
+        });
+        layers['unesco'] = unescoLayer;
+      }
+
       // Calcola bounds e adatta la vista SOLO dopo aver caricato i dati
       const bounds = geoLayer.getBounds();
       if (bounds.isValid()) {
@@ -305,10 +316,19 @@ function adjustView(layerName) {
   const layer = layers[layerName];
   if (!layer) return;
 
+  // Se layer UNESCO, usa bounds del poligono
+  if (layerName === 'unesco') {
+    const bounds = layer.getBounds();
+    if (bounds.isValid()) {
+      map.flyToBounds(bounds, { padding: [60, 60], animate: true });
+    }
+    return;
+  }
+
   const bounds = L.latLngBounds([]);
-
-  layer.eachLayer(marker => bounds.extend(marker.getLatLng()));
-
+  layer.eachLayer(marker => {
+    if (marker.getLatLng) bounds.extend(marker.getLatLng());
+  });
   if (bounds.isValid()) {
     map.flyToBounds(bounds, { padding: [60, 60], animate: true });
   }

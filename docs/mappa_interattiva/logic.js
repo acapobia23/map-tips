@@ -1,25 +1,17 @@
 /**
- * Logic.js - Core Map Engine
+ * Nuovo Logic.js - Visualizzazione semplice di tutti i punti GeoJSON con filtro categorie
  */
 
 let map;
 let pinLayer;
 let allData = [];
-let comuneData = [];
-let currentFilter = { category: '', query: '' };
 let isDetailCardVisible = false;
-
-// Mock data potenziato per testare le categorie
-const MOCK_FEATURES = [
-    { type: "Feature", properties: { name: "Grand Hotel Firenze", tourism: "hotel" }, geometry: { type: "Point", coordinates: [11.252, 43.775] } },
-    { type: "Feature", properties: { name: "Uffizi Gallery", tourism: "museum" }, geometry: { type: "Point", coordinates: [11.255, 43.768] } },
-    { type: "Feature", properties: { name: "Statua di Dante", tourism: "artwork" }, geometry: { type: "Point", coordinates: [11.258, 43.770] } },
-    { type: "Feature", properties: { name: "Punto Panoramico Arno", tourism: "viewpoint" }, geometry: { type: "Point", coordinates: [11.245, 43.765] } },
-    { type: "Feature", properties: { name: "Ostello Bello", tourism: "hostel" }, geometry: { type: "Point", coordinates: [11.248, 43.778] } }
-];
+let currentCategory = 'restaurant';
+let unescoLayer = null;
+let unescoBounds = null;
 
 async function initApp() {
-    // 1. Inizializzazione Mappa
+    // Inizializzazione Mappa
     map = L.map('map', {
         zoomControl: false,
         center: [43.77, 11.25],
@@ -27,7 +19,6 @@ async function initApp() {
         maxZoom: 21
     });
 
-    // Basemap chiara stile GeoExplorer
     L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
         attribution: '&copy; OpenStreetMap',
         maxZoom: 21,
@@ -36,139 +27,83 @@ async function initApp() {
 
     L.control.zoom({ position: 'bottomright' }).addTo(map);
 
-    // 2. Caricamento Dati
+    // Caricamento dati GeoJSON
     try {
-        const [data, comune] = await Promise.all([
-            GeoJSONParser.fetchData('export.geojson'),
-            GeoJSONParser.fetchData('comune.geojson')
-        ]);
+        const data = await GeoJSONParser.fetchData('export.geojson');
         if (data && data.features && data.features.length > 0) {
-            allData = data.features.map(f => ({
-                ...f,
-                hasWebsite: f.website || f.properties?.website || f.properties?.url || f.properties?.contact?.website
-            }));
+            allData = data.features;
         } else {
-            allData = MOCK_FEATURES;
+            allData = [];
         }
-        if (comune && comune.features && comune.features.length > 0) {
-            comuneData = comune.features.map(f => ({
-                ...f,
-                isComune: true // flag per marker arancioni
-            }));
-        } else {
-            comuneData = [];
+        // === GESTIONE POLIGONO UNESCO ===
+        const unescoFeature = data.features.find(f => f.geometry && f.geometry.type === 'Polygon' && f.properties && f.properties.name && f.properties.name.toLowerCase().includes('unesco'));
+        if (unescoFeature) {
+            unescoLayer = L.geoJSON(unescoFeature, {
+                style: { color: '#3bd2c9', weight: 3, fillOpacity: 0.18, dashArray: '6 4' },
+                interactive: false
+            }).addTo(map);
+            unescoBounds = unescoLayer.getBounds();
         }
     } catch (err) {
-        allData = MOCK_FEATURES;
-        comuneData = [];
+        allData = [];
     }
 
-    // 3. Inizializzazione Sidebar
-    SidebarManager.init(allData, (newFilter) => {
-        currentFilter = newFilter;
-        applyFilters();
-    }, comuneData);
-
-    // Rendering iniziale
-    applyFilters();
-    
-    // Fix resize mappa
+    // Inizializza sidebar e callback filtro
+    if (typeof SidebarManager !== 'undefined') {
+        SidebarManager.init((cat) => {
+            currentCategory = cat;
+            applyCategoryFilter();
+        });
+    }
+    applyCategoryFilter();
     setTimeout(() => map.invalidateSize(), 500);
 }
 
-function applyFilters() {
-    let filtered = allData;
-    let isComune = false;
-    const { category, query } = currentFilter;
-
-    // Se nessuna categoria selezionata, non mostrare punti
-    if (!category) {
-        renderMarkers([], false);
+function applyCategoryFilter() {
+    if (unescoLayer && !map.hasLayer(unescoLayer)) map.addLayer(unescoLayer); // sempre visibile
+    if (currentCategory === 'unesco') {
+        if (unescoBounds && unescoBounds.isValid()) {
+            map.fitBounds(unescoBounds, { padding: [50, 50], animate: true });
+        }
+        // Mostra tutti i marker che ricadono dentro il poligono UNESCO
+        const pinsInUnesco = allData.filter(f => {
+            if (f.geometry && f.geometry.type === 'Point') {
+                const lat = f.geometry.coordinates[1];
+                const lng = f.geometry.coordinates[0];
+                return unescoBounds && unescoBounds.contains([lat, lng]);
+            }
+            return false;
+        });
+        renderMarkers(pinsInUnesco);
         return;
     }
-
-    // Mostra tutti i punti (export.geojson + comune.geojson)
-    if (category === 'all') {
-        filtered = allData.concat(comuneData);
-    } 
-    // Categoria UNESCO sempre attiva
-    else if (category === 'unesco') {
-        filtered = allData.filter(f => f.properties?.name === 'Centro Storico UNESCO');
-    }
-    // Gestione categorie del comune
-    else if (category && category.startsWith('comune:')) {
-        isComune = true;
-        const tipo = category.split(':')[1];
-        filtered = comuneData.filter(f => {
-            // Filtro esatto e case sensitive sulla tipologiaattivita
-            const t = f.properties?.tipologiaattivita || f.properties?.tipologia || f.properties?.tipo_attivita || 'Altro';
-            return t === tipo;
+    let filtered;
+    if (currentCategory === 'other') {
+        filtered = allData.filter(f => {
+            const a = f.properties?.amenity;
+            return a !== 'restaurant' && a !== 'cafe' && a !== 'nightclub';
         });
     } else {
-        // Filtro Categoria standard
-        if (category === 'haswebsite') {
-            filtered = filtered.filter(f => f.hasWebsite);
-        } else if (category !== 'all') {
-            filtered = filtered.filter(f => {
-                const props = f.properties || {};
-                return props.tourism === category || props.amenity === category || props.shop === category;
-            });
-        }
+        filtered = allData.filter(f => f.properties?.amenity === currentCategory);
     }
-
-    // Filtro Ricerca Testuale
-    if (query && query.trim() !== '') {
-        const q = query.toLowerCase().trim();
-        filtered = filtered.filter(f => {
-            const name = (f.properties?.name || "").toLowerCase();
-            return name.includes(q);
-        });
-    }
-
-    renderMarkers(filtered, isComune);
+    renderMarkers(filtered);
 }
 
-function renderMarkers(features, isComune = false) {
+function renderMarkers(features) {
     if (pinLayer) map.removeLayer(pinLayer);
-
-    // Emoji per tipologie del comune
-    const comuneEmojis = {
-        'ABUSIVI': '🚫',
-        'AFFITTACAMERE': '🏠',
-        'AGRITURISMO': '🌾',
-        'ALBERGHI': '🏨',
-        'BED AND BREAKFAST': '🛏️',
-        'CASE PER FERIE': '🏡',
-        'CAV': '🏢',
-        'FATTORIA DIDATTICA': '👩‍🌾',
-        'OSTELLO': '🛌',
-        'RESIDENCE': '🏬',
-        "RESIDENZA D'EPOCA": '🏰',
-        'RTA': '🏚️'
-    };
-
     pinLayer = L.geoJSON({ type: "FeatureCollection", features }, {
         pointToLayer: (feature, latlng) => {
-            let icon;
-            if (isComune || feature.isComune) {
-                // Emoji in base alla tipologia
-                const tipo = feature.properties?.tipologiaattivita || feature.properties?.tipologia || feature.properties?.tipo_attivita || 'Altro';
-                const emoji = comuneEmojis[tipo] || '🟧';
-                icon = L.divIcon({
-                    className: 'custom-pin-container',
-                    html: `<div class="custom-pin pin-comune">${emoji}</div>`,
-                    iconSize: [32, 40],
-                    iconAnchor: [16, 40]
-                });
-            } else {
-                const symbol = getSymbol(feature.properties);
-                icon = L.divIcon({
-                    className: 'custom-pin-container',
-                    html: `<div class="custom-pin">${symbol}</div>`,
-                    iconSize: [32, 40],
-                    iconAnchor: [16, 40]
-                });
-            }
+            let iconHtml = '📍';
+            const a = feature.properties?.amenity;
+            if (a === 'restaurant') iconHtml = '🍝';
+            else if (a === 'cafe') iconHtml = '☕';
+            else if (a === 'nightclub') iconHtml = '🎶';
+            const icon = L.divIcon({
+                className: 'custom-pin-container',
+                html: `<div class="custom-pin">${iconHtml}</div>`,
+                iconSize: [32, 40],
+                iconAnchor: [16, 40]
+            });
             return L.marker(latlng, { icon });
         },
         onEachFeature: (feature, layer) => {
@@ -178,8 +113,7 @@ function renderMarkers(features, isComune = false) {
             });
         },
         style: function(feature) {
-            // Solo per poligoni/linee
-            return { color: isComune ? 'orange' : '#3bd2c9', weight: 2, fillOpacity: 0.1 };
+            return { color: '#3bd2c9', weight: 2, fillOpacity: 0.1 };
         }
     }).addTo(map);
 
@@ -188,30 +122,9 @@ function renderMarkers(features, isComune = false) {
     }
 }
 
-function getSymbol(props) {
-    const type = props.tourism || props.amenity || props.shop || '';
-    // Emoji mapping by category
-    if (type.includes('guest_house') || type.includes('affittacamere')) return '🏠'; // Affittacamere
-    if (type.includes('attraction')) return '🎡'; // Attrazioni
-    if (type.includes('information')) return 'ℹ️'; // Info Turistiche
-    if (type.includes('hostel')) return '🛌'; // Ostelli
-    if (type.includes('viewpoint')) return '🔭'; // Punti Panoramici
-    if (type.includes('apartment')) return '🏙️'; // Appartamenti
-    if (type.includes('gallery')) return '🖼️'; // Gallerie
-    if (type.includes('hotel')) return '🏨';
-    if (type.includes('museum')) return '🏛️';
-    if (type.includes('artwork')) return '🎨';
-    if (type.includes('bar')) return '🍸';
-    if (type.includes('ice_cream')) return '🍦';
-    if (type.includes('cafe')) return '☕';
-    if (type.includes('restaurant')) return '🍝';
-    return '📍';
-}
-
 function showDetailCard(feature) {
     const card = document.getElementById('map-card');
     const p = feature.properties || {};
-    // Estrai coordinate
     let lat = null, lng = null;
     if (feature.geometry && feature.geometry.type === 'Point' && Array.isArray(feature.geometry.coordinates)) {
         lng = feature.geometry.coordinates[0];
