@@ -1,6 +1,8 @@
 ## 🗺️ Icon Credits
 
-The icons used in this project are sourced from [Flaticon](https://www.flaticon.com/)  
+[![Cupola](../mappa%19interattiva/cupola.png)](https://acapobia23.github.io/map-tips/mappa%20interattiva/index.html)
+
+The icons bestide this one used in this project are sourced from [Flaticon](https://www.flaticon.com/)  
 and are **free for commercial use with attribution** under their respective licenses.
 
 Each icon remains property of its original author as credited below:
@@ -31,4 +33,4 @@ If you replace or add icons in the future:
 Created by 42 Firenze Project Team
 
 old map
-<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1mNVauGKmK0CwocD9PAX_kAc6rStt8QU&ehbc=2E312F&noprof=1" width="340" height="480"></iframe>
+
