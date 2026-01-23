@@ -1,6 +1,6 @@
 ## 🗺️ Icon Credits
 
-[![Cupola](../mappa%19interattiva/cupola.png)](https://acapobia23.github.io/map-tips/mappa%20interattiva/index.html)
+[![Cupola](../mappa%20interattiva/cupola.png)](https://acapobia23.github.io/map-tips/mappa%20interattiva/index.html)
 
 The icons bestide this one used in this project are sourced from [Flaticon](https://www.flaticon.com/)  
 and are **free for commercial use with attribution** under their respective licenses.
@@ -31,6 +31,4 @@ If you replace or add icons in the future:
 
 © 2025 — Velona’s Jungle Map Repository  
 Created by 42 Firenze Project Team
-
-old map
 
