@@ -153,3 +153,47 @@ function showDetailCard(feature) {
 }
 
 window.addEventListener('load', initApp);
+
+// ------------------ SEARCH LOGIC ------------------
+const searchInput = document.getElementById('map-search');
+if (searchInput) {
+    searchInput.addEventListener('input', function() {
+        const query = this.value.trim().toLowerCase();
+        if (!query) {
+            applyCategoryFilter();
+            return;
+        }
+        // Cerca tra tutti i dati filtrati per categoria
+        let filtered = allData;
+        if (currentCategory && currentCategory !== 'unesco') {
+            if (currentCategory === 'other') {
+                filtered = allData.filter(f => {
+                    const a = f.properties?.amenity;
+                    return a !== 'restaurant' && a !== 'cafe' && a !== 'nightclub';
+                });
+            } else {
+                filtered = allData.filter(f => f.properties?.amenity === currentCategory);
+            }
+        } else if (currentCategory === 'unesco' && unescoBounds) {
+            filtered = allData.filter(f => {
+                if (f.geometry && f.geometry.type === 'Point') {
+                    const lat = f.geometry.coordinates[1];
+                    const lng = f.geometry.coordinates[0];
+                    return unescoBounds.contains([lat, lng]);
+                }
+                return false;
+            });
+        }
+        // Filtra per testo
+        const results = filtered.filter(f => {
+            const props = f.properties || {};
+            return (
+                (props.name && props.name.toLowerCase().includes(query)) ||
+                (props.description && props.description.toLowerCase().includes(query)) ||
+                (props.address && props.address.toLowerCase().includes(query)) ||
+                (props['addr:street'] && props['addr:street'].toLowerCase().includes(query))
+            );
+        });
+        renderMarkers(results);
+    });
+}
