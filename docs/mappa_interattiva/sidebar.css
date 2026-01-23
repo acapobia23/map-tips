@@ -110,7 +110,7 @@ c.sidebar {
   cursor: pointer;
   transition: background 0.2s;
   border-left: 4px solid transparent;
-  border-radius: 8px;
+  border-radius: 22px;
 }
 
 .cat-item:hover {
@@ -120,13 +120,14 @@ c.sidebar {
 .cat-item.active {
   background: #ebfcff;
   border-left-color: var(--primary);
+  border-radius: 25px;
 }
 
 .cat-icon {
   width: 32px;
   height: 32px;
   background: #f0f0f0;
-  border-radius: 22px;
+  border-radius: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
