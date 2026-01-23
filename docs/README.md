@@ -1,6 +1,6 @@
 ## 🗺️ Icon Credits
 
-[![Cupola](https://acapobia23.github.io/map-tips/mappa%20interattiva/cupola.png)](https://acapobia23.github.io/map-tips/mappa%20interattiva/index.html)
+[![Cupola](https://github.com/acapobia23/map-tips/blob/main/docs/mappa_interattiva/cupola.png?raw=true)](https://acapobia23.github.io/map-tips/mappa%20interattiva/index.html)
 
 The icons bestide this one used in this project are sourced from [Flaticon](https://www.flaticon.com/)  
 and are **free for commercial use with attribution** under their respective licenses.
