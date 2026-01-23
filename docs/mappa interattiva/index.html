@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WDL - Mappa Interattiva</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="sidebar.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="app-container">
+    <!-- Sidebar Stile GeoExplorer -->
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-header">
+        <div class="header-top">
+          <span class="header-icon"> <img style="width: 64px; height: 64px;" src="cupola.png" alt="Cupola Icon" /> </span>
+          <div>
+            <h1>Where Do Locals</h1>
+            <p>Mappa interattiva</p>
+          </div>
+        </div>
+        
+        <div class="search-box">
+          <input type="text" id="map-search" placeholder="Cerca luoghi..." />
+          <span class="search-icon">🔍</span>
+        </div>
+      </div>
+
+      <div class="sidebar-content">
+        <div class="section-label">CATEGORIE TOURISM</div>
+        <div id="categories-list" class="categories-list">
+          <!-- Popolato dinamicamente da sidebar.js -->
+          <div class="loader-text">Caricamento categorie...</div>
+        </div>
+      </div>
+
+      <div class="sidebar-footer">
+        <span class="file-info">📄 File: export.geojson</span>
+      </div>
+    </aside>
+
+    <!-- Mappa -->
+    <main id="map-container">
+      <div id="map"></div>
+      
+      <!-- Toggle per Mobile -->
+      <button id="sidebar-toggle" class="sidebar-toggle-btn">☰</button>
+      
+      <!-- Info Card Bottom -->
+      <div id="map-card"></div>
+    </main>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  
+  <!-- App Modules -->
+  <script src="parser.js"></script>
+  <script src="sidebar.js"></script>
+  <script src="logic.js"></script>
+</body>
+</html>

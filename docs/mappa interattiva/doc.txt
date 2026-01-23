@@ -1,0 +1,48 @@
+node/1184195299
+Caffè Cibreo
+
+Il Cibreo
+@id: node/335930294
+
+Il Cibreo Trattoria
+@id: node/2361676062
+
+
+
+1) Cibrèo Ristorante
+Refined Tuscan cuisine with contemporary twist.
+
+2) Cibrèo Trattoria (Il Cibrèino)
+Classic Florentine dishes, relaxed atmosphere.
+
+3) Ciblèo
+Tuscan-Oriental fusion cuisine.
+
+4) cibrèo Caffè (Sant'Ambrogio)
+
+5) cibrèo Caffè Helvetia & Bristol
+
+6) ristorante & cocktailBar 
+
+7) teatro del sale
+
+Cibrèo Ristorante – Via Andrea del Verrocchio, 8r, 50122 Firenze FI, Italia.
+Coordinate: 43.77115, 11.26639 (GPS)
+
+Cibrèo Trattoria (Il Cibrèino) – Via dei Macci, 122r, 50122 Firenze FI, Italia.
+Coordinate approssimate (centro via dei Macci): 43.77127, 11.26359 (basato su indirizzo Via dei Macci 122r, Firenze).
+
+Ciblèo - Tortelli e Ravioli – Via Andrea del Verrocchio, 2r, 50122 Firenze FI, Italia.
+Coordinate approssimate (centro dell’edificio): 43.77133, 11.26710 (via Andrea del Verrocchio 2r, Firenze).
+
+Cibrèo Caffè – Via Andrea del Verrocchio, 5R, 50122 Firenze FI, Italia.
+Coordinate approssimate: 43.77122, 11.26698 (via Andrea del Verrocchio 5R, Firenze).
+
+Cibrèo Caffè - Helvetia & Bristol – Via dei Pescioni, 8r, 50123 Firenze FI, Italia.
+Coordinate approssimate: 43.77187, 11.25543 (via dei Pescioni 8r, Firenze).
+
+Cibrèo Ristorante & Cocktail Bar – Via de’ Vecchietti, 5, 50123 Firenze FI, Italia (nel centro, spesso indicato assieme a locali legati al gruppo Cibrèo).
+Coordinate approssimate: 43.77320, 11.25590 (via de’ Vecchietti 5, Firenze).
+
+cib Teatro del Sale – Via dei Macci, 111/r, 50122 Firenze FI, Italia.
+Coordinate approssimate: 43.77135, 11.26340 (via dei Macci 111r, Firenze).

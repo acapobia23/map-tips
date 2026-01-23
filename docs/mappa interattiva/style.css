@@ -1,0 +1,138 @@
+:root {
+  --primary: #3bd2c9; /* Viola GeoExplorer */
+  --primary-light: #61e0d7;
+  --accent: #41c2b9;
+  --bg-sidebar: #ffffff;
+  --bg-map: #f4f4f4;
+  --text-main: #333;
+  --text-muted: #888;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Layout Mappa */
+#map-container {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+/* Toggle per mobile */
+.sidebar-toggle-btn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 1000;
+  background: white;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px var(--shadow);
+  cursor: pointer;
+  display: none; /* Nascosto su desktop */
+}
+
+/* Custom Marker (Cerchio Rosso con punta) */
+.custom-pin {
+  background: #3bd2c9;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 16px;
+  position: relative;
+}
+
+.custom-pin::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid #31b1a8;
+}
+
+/* Stile per pin arancione */
+.custom-pin.pin-comune {
+  background: orange;
+  color: white;
+}
+
+.custom-pin.pin-comune::after {
+  border-top: 8px solid orange;
+}
+
+/* Info Card Bottom */
+#map-card {
+  position: absolute;
+  bottom: -400px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 450px;
+  z-index: 2000;
+  transition: bottom 0.5s cubic-bezier(0.17, 0.84, 0.44, 1);
+}
+
+#map-card.visible { bottom: 25px; }
+
+.map-card-inner {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #ccc;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sidebar-toggle-btn { display: flex; align-items: center; justify-content: center; }
+  .sidebar {
+    position: absolute;
+    left: -100% !important;
+    z-index: 1001;
+  }
+  .sidebar.open { left: 0 !important; }
+}
