@@ -3,7 +3,7 @@
  */
 const SidebarManager = {
     categories: [
-        { id: 'unesco', label: 'Centro Storico UNESCO', icon: '🏛️' },
+        { id: 'unesco', label: 'Area UNESCO', icon: '🏛️' },
         { id: 'restaurant', label: 'Ristoranti', icon: '🍝' },
         { id: 'cafe', label: 'Caffè', icon: '☕' },
         { id: 'nightclub', label: 'Nightclub', icon: '🎶' },
