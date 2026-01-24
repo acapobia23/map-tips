@@ -139,8 +139,8 @@ body, html {
   align-items: center;
   gap: 8px;
   position: absolute;
-  right: 18px;
-  bottom: 110px;
+  right: 42px !important;
+  bottom: 10px !important;
   z-index: 1200;
   flex-direction: column;
 }
@@ -154,7 +154,7 @@ body, html {
 #custom-scale-control .scale-label {
   font-size: 1em;
   color: #111;
-  margin-bottom: 2px;
+  margin-bottom: -8px;
   margin-top: -10px;
   transform: translate(-20px, 10px); /* x=sinistra, y=basso */
 

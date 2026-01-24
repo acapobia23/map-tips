@@ -47,8 +47,12 @@ async function initApp() {
         if (min < 1) {
             const sec = Math.round(min * 60);
             label = `${sec} sec`;
-        } else {
+        } else if (min < 60) {
             label = `${Math.round(min)} min`;
+        } else {
+            const hours = Math.floor(min / 60);
+            const mins = Math.round(min % 60);
+            label = mins > 0 ? `${hours} h ${mins} min` : `${hours} h`;
         }
         // Aggiorna DOM
         scaleControl.querySelector('.scale-bar').style.display = 'inline-block';
