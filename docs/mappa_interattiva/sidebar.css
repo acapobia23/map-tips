@@ -1,17 +1,4 @@
-c.sidebar {
-  width: 320px;
-  background: var(--bg-sidebar);
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 4px 0 15px var(--shadow);
-  transition: left 0.3s ease;
-  flex-shrink: 0;
-  position: relative;
-  top: 0;
-  max-height: 100vh;
-  left: 0;
-}
+
 
 .sidebar-header {
   background: var(--primary);

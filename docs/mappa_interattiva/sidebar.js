@@ -27,10 +27,51 @@ const SidebarManager = {
                 this.activeCategory = cat.id;
                 this.render();
                 if (this.onCategoryChange) this.onCategoryChange(cat.id);
+                // Chiudi sidebar su mobile dopo selezione
+                closeSidebar();
             };
             list.appendChild(item);
         });
     }
 };
+
+// --- LOGICA COLLASSO/TOGGLE SIDEBAR MOBILE ---
+function openSidebar() {
+    document.getElementById('sidebar')?.classList.add('open');
+    document.body.classList.add('sidebar-open');
+}
+function closeSidebar() {
+    document.getElementById('sidebar')?.classList.remove('open');
+    document.body.classList.remove('sidebar-open');
+}
+function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    if (sidebar?.classList.contains('open')) {
+        closeSidebar();
+    } else {
+        openSidebar();
+    }
+}
+
+// Bottone toggle
+const sidebarToggleBtn = document.getElementById('sidebar-toggle');
+if (sidebarToggleBtn) {
+    sidebarToggleBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleSidebar();
+    });
+}
+
+// Chiudi sidebar cliccando fuori (solo mobile)
+document.addEventListener('click', function(e) {
+    const sidebar = document.getElementById('sidebar');
+    if (!sidebar) return;
+    if (window.innerWidth > 768) return; // solo mobile
+    if (sidebar.classList.contains('open')) {
+        if (!sidebar.contains(e.target) && e.target !== sidebarToggleBtn) {
+            closeSidebar();
+        }
+    }
+});
 
 //aggiungi qui le voci della sidebar della mappa interattiva

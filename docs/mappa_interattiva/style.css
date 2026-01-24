@@ -132,8 +132,7 @@ body, html {
   min-width: 120px;
   font-size: 15px;
   font-family: inherit;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  background: rgba(255,255,255,0.95);
+  background: transparent;
   border-radius: 12px;
   padding: 6px 14px 6px 10px;
   display: flex;
@@ -143,43 +142,70 @@ body, html {
   right: 18px;
   bottom: 110px;
   z-index: 1200;
+  flex-direction: column;
 }
+
+#custom-scale-control .scale-bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#custom-scale-control .scale-label {
+  font-size: 1em;
+  color: #111;
+  margin-bottom: 2px;
+  margin-top: -10px;
+  transform: translate(-20px, 10px); /* x=sinistra, y=basso */
+
+  text-align: center;
+}
+
+#custom-scale-control .scale-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 #custom-scale-control .scale-bar {
   position: relative;
-  height: 6px;
+  height: 3px;
   border-radius: 3px;
-  background: linear-gradient(90deg, #3bd2c9 60%, #b6f0ed 100%);
-  margin: 0 4px;
+  background: #111;
+  margin: 8px 4px 0 4px;
   min-width: 60px;
   max-width: 120px;
   transition: width 0.2s;
   display: inline-block;
 }
+
 #custom-scale-control .scale-bar::before,
 #custom-scale-control .scale-bar::after {
   content: '';
   position: absolute;
   width: 2px;
-  height: 18px;
-  background: #3bd2c9;
-  top: 50%;
+  height: 12px;
+  margin-right: 2px;
+  margin-left: 2px;
+  background: #111;
+  top: 0;
   transform: translateY(-50%);
 }
+
 #custom-scale-control .scale-bar::before {
   left: -4px;
 }
+
 #custom-scale-control .scale-bar::after {
   right: -4px;
 }
+
 #custom-scale-control .scale-icon {
   font-size: 1.5em;
   margin-right: 2px;
+  margin-bottom: 14px;
 }
-#custom-scale-control .scale-label {
-  font-size: 1em;
-  color: #333;
-  margin-left: 6px;
-}
+
 @media (max-width: 600px) {
   #custom-scale-control {
     right: 10px;
@@ -190,16 +216,33 @@ body, html {
   #custom-scale-control .scale-bar {
     min-width: 40px;
     max-width: 80px;
+    margin: 0px;
   }
 }
 
-/* Responsive */
+/* Sidebar fix: sempre sfondo bianco e sopra la mappa */
+.sidebar {
+  background: var(--bg-sidebar) !important;
+  height: 100vh !important;
+  position: relative;
+  z-index: 2;
+}
+
 @media (max-width: 768px) {
-  .sidebar-toggle-btn { display: flex; align-items: center; justify-content: center; }
+    .sidebar-toggle-btn { display: flex; align-items: center; justify-content: center; }
+
   .sidebar {
-    position: absolute;
+    position: absolute !important;
     left: -100% !important;
-    z-index: 1001;
+    z-index: 1001 !important;
+    top: 0;
+    height: 100vh !important;
+    width: 320px !important;
+    background: var(--bg-sidebar) !important;
+    box-shadow: 4px 0 15px var(--shadow);
+    transition: left 0.3s cubic-bezier(0.4,0,0.2,1);
   }
-  .sidebar.open { left: 0 !important; }
+  .sidebar.open {
+    left: 0 !important;
+  }
 }

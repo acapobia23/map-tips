@@ -22,21 +22,14 @@ async function initApp() {
     // === RIGHELLO DINAMICO ===
     const scaleControl = document.createElement('div');
     scaleControl.id = 'custom-scale-control';
-    scaleControl.innerHTML = `<span class="scale-bar"></span> <span class="scale-icon">🚶‍♂️</span> <span class="scale-label"></span>`;
-    scaleControl.style.position = 'absolute';
-    scaleControl.style.right = '18px';
-    scaleControl.style.bottom = '110px';
-    scaleControl.style.zIndex = 1200;
-    scaleControl.style.display = 'flex';
-    scaleControl.style.alignItems = 'center';
-    scaleControl.style.gap = '8px';
-    scaleControl.style.background = 'rgba(255,255,255,0.95)';
-    scaleControl.style.borderRadius = '12px';
-    scaleControl.style.boxShadow = '0 2px 8px rgba(0,0,0,0.08)';
-    scaleControl.style.padding = '6px 14px 6px 10px';
-    scaleControl.style.fontSize = '15px';
-    scaleControl.style.fontFamily = 'inherit';
-    scaleControl.style.userSelect = 'none';
+    scaleControl.innerHTML = `
+      <div class="scale-bar-container">
+        <span class="scale-label"></span>
+        <div class="scale-bar-row">
+          <span class="scale-bar"></span>
+          <span class="scale-icon">🚶‍♂️</span>
+        </div>
+      </div>`;
     document.getElementById('map-container').appendChild(scaleControl);
 
     function updateScaleBar() {
@@ -60,9 +53,9 @@ async function initApp() {
         // Aggiorna DOM
         scaleControl.querySelector('.scale-bar').style.display = 'inline-block';
         scaleControl.querySelector('.scale-bar').style.width = barPx + 'px';
-        scaleControl.querySelector('.scale-bar').style.height = '6px';
-        scaleControl.querySelector('.scale-bar').style.background = 'linear-gradient(90deg, #3bd2c9 60%, #b6f0ed 100%)';
-        scaleControl.querySelector('.scale-bar').style.borderRadius = '3px';
+        scaleControl.querySelector('.scale-bar').style.height = '3px';
+        scaleControl.querySelector('.scale-bar').style.background = '#111';
+        scaleControl.querySelector('.scale-bar').style.borderRadius = '2px';
         scaleControl.querySelector('.scale-bar').style.margin = '0 4px';
         scaleControl.querySelector('.scale-label').innerHTML = label;
     }
