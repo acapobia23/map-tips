@@ -126,6 +126,73 @@ body, html {
   cursor: pointer;
 }
 
+/* === RIGHELLO DINAMICO === */
+#custom-scale-control {
+  pointer-events: none;
+  min-width: 120px;
+  font-size: 15px;
+  font-family: inherit;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  background: rgba(255,255,255,0.95);
+  border-radius: 12px;
+  padding: 6px 14px 6px 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  right: 18px;
+  bottom: 110px;
+  z-index: 1200;
+}
+#custom-scale-control .scale-bar {
+  position: relative;
+  height: 6px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #3bd2c9 60%, #b6f0ed 100%);
+  margin: 0 4px;
+  min-width: 60px;
+  max-width: 120px;
+  transition: width 0.2s;
+  display: inline-block;
+}
+#custom-scale-control .scale-bar::before,
+#custom-scale-control .scale-bar::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 18px;
+  background: #3bd2c9;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#custom-scale-control .scale-bar::before {
+  left: -4px;
+}
+#custom-scale-control .scale-bar::after {
+  right: -4px;
+}
+#custom-scale-control .scale-icon {
+  font-size: 1.5em;
+  margin-right: 2px;
+}
+#custom-scale-control .scale-label {
+  font-size: 1em;
+  color: #333;
+  margin-left: 6px;
+}
+@media (max-width: 600px) {
+  #custom-scale-control {
+    right: 10px;
+    bottom: 90px;
+    font-size: 13px;
+    padding: 5px 8px 5px 7px;
+  }
+  #custom-scale-control .scale-bar {
+    min-width: 40px;
+    max-width: 80px;
+  }
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .sidebar-toggle-btn { display: flex; align-items: center; justify-content: center; }

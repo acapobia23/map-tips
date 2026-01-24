@@ -19,6 +19,56 @@ async function initApp() {
         maxZoom: 21
     });
 
+    // === RIGHELLO DINAMICO ===
+    const scaleControl = document.createElement('div');
+    scaleControl.id = 'custom-scale-control';
+    scaleControl.innerHTML = `<span class="scale-bar"></span> <span class="scale-icon">🚶‍♂️</span> <span class="scale-label"></span>`;
+    scaleControl.style.position = 'absolute';
+    scaleControl.style.right = '18px';
+    scaleControl.style.bottom = '110px';
+    scaleControl.style.zIndex = 1200;
+    scaleControl.style.display = 'flex';
+    scaleControl.style.alignItems = 'center';
+    scaleControl.style.gap = '8px';
+    scaleControl.style.background = 'rgba(255,255,255,0.95)';
+    scaleControl.style.borderRadius = '12px';
+    scaleControl.style.boxShadow = '0 2px 8px rgba(0,0,0,0.08)';
+    scaleControl.style.padding = '6px 14px 6px 10px';
+    scaleControl.style.fontSize = '15px';
+    scaleControl.style.fontFamily = 'inherit';
+    scaleControl.style.userSelect = 'none';
+    document.getElementById('map-container').appendChild(scaleControl);
+
+    function updateScaleBar() {
+        // Lunghezza in pixel del righello
+        const barPx = 90;
+        // Prendi il centro della mappa
+        const center = map.getCenter();
+        // Calcola la distanza in metri tra due punti separati da barPx orizzontali
+        const p1 = map.containerPointToLatLng([map.getSize().x/2 - barPx/2, map.getSize().y/2]);
+        const p2 = map.containerPointToLatLng([map.getSize().x/2 + barPx/2, map.getSize().y/2]);
+        const meters = map.distance(p1, p2);
+        // Conversione: 5 km/h = 83.33 m/min
+        const min = meters / 83.33;
+        let label;
+        if (min < 1) {
+            const sec = Math.round(min * 60);
+            label = `${sec} sec`;
+        } else {
+            label = `${Math.round(min)} min`;
+        }
+        // Aggiorna DOM
+        scaleControl.querySelector('.scale-bar').style.display = 'inline-block';
+        scaleControl.querySelector('.scale-bar').style.width = barPx + 'px';
+        scaleControl.querySelector('.scale-bar').style.height = '6px';
+        scaleControl.querySelector('.scale-bar').style.background = 'linear-gradient(90deg, #3bd2c9 60%, #b6f0ed 100%)';
+        scaleControl.querySelector('.scale-bar').style.borderRadius = '3px';
+        scaleControl.querySelector('.scale-bar').style.margin = '0 4px';
+        scaleControl.querySelector('.scale-label').innerHTML = label;
+    }
+    map.on('zoomend moveend', updateScaleBar);
+    setTimeout(updateScaleBar, 600);
+
     L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
         attribution: '&copy; OpenStreetMap',
         maxZoom: 21,
@@ -57,7 +107,7 @@ async function initApp() {
     }
     applyCategoryFilter();
     setTimeout(() => map.invalidateSize(), 500);
-}
+} // chiusura corretta di initApp
 
 function applyCategoryFilter() {
     if (unescoLayer && !map.hasLayer(unescoLayer)) map.addLayer(unescoLayer); // sempre visibile
